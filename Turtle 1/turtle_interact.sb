@@ -1,0 +1,38 @@
+Turtle.Show() 
+butu = Controls.AddButton ("Up", 300 , 350)  
+butd = Controls.AddButton ("Down" , 290, 390) 
+butl = Controls.AddButton ("Left" , 200 , 380) 
+butr = Controls.AddButton ("Right" , 380 , 380)
+bute = Controls.AddButton ("Exit" , 1 , 1 )
+
+Controls.ButtonClicked = onButtonClick
+
+Sub onButtonClick
+ If Controls.LastClickedButton = butu Then
+  Turtle.Angle = (0)
+  Turtle.Move  (10)  
+ElseIf Controls.LastClickedButton = butd Then
+  
+   Turtle.angle = (180)
+   Turtle.Move  (10)
+   
+ elseif Controls.LastClickedButton = butl then
+   
+   Turtle.angle = (270)
+   Turtle.Move  (10)
+ elseif Controls.LastClickedButton = butr then
+   
+   Turtle.Angle = (90)
+   Turtle.Move (10)  
+   
+ elseif Controls.LastClickedButton = bute then
+   GraphicsWindow.Hide()
+   
+   
+ EndIf
+EndSub 
+
+
+
+
+
